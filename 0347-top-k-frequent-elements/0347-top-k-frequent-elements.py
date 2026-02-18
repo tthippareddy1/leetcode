@@ -6,10 +6,11 @@ class Solution:
         
         sorted_dic = dict(sorted(group.items(), key = lambda item: item[1], reverse = True))
         sorted_keys = list(sorted_dic.keys())
-        final = []
-        for i in range(k):
-            final.append(sorted_keys[i])
-        return final
+        return sorted_keys[:k]
+        # final = []
+        # for i in range(k):
+        #     final.append(sorted_keys[i])
+        # return final
             
 
 
